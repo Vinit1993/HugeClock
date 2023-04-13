@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07DABDD629E8215300AA0CC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DABDD529E8215300AA0CC7 /* AppDelegate.swift */; };
+		07DABDD829E8215300AA0CC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DABDD729E8215300AA0CC7 /* SceneDelegate.swift */; };
+		07DABDDA29E8215300AA0CC7 /* AlarmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DABDD929E8215300AA0CC7 /* AlarmsViewController.swift */; };
+		07DABDDD29E8215300AA0CC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DABDDB29E8215300AA0CC7 /* Main.storyboard */; };
+		07DABDE029E8215300AA0CC7 /* HugeClock.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07DABDDE29E8215300AA0CC7 /* HugeClock.xcdatamodeld */; };
+		07DABDE229E8215400AA0CC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07DABDE129E8215400AA0CC7 /* Assets.xcassets */; };
+		07DABDE529E8215400AA0CC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DABDE329E8215400AA0CC7 /* LaunchScreen.storyboard */; };
+		07DABDF029E8215400AA0CC7 /* HugeClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DABDEF29E8215400AA0CC7 /* HugeClockTests.swift */; };
+		07DABDFA29E8215400AA0CC7 /* HugeClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DABDF929E8215400AA0CC7 /* HugeClockUITests.swift */; };
+		07DABDFC29E8215400AA0CC7 /* HugeClockUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DABDFB29E8215400AA0CC7 /* HugeClockUITestsLaunchTests.swift */; };
+		07DABE0929E8279A00AA0CC7 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DABE0829E8279A00AA0CC7 /* Alarm.swift */; };
+		07DABE0C29E8282500AA0CC7 /* AddAlarmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DABE0B29E8282500AA0CC7 /* AddAlarmViewModel.swift */; };
+		07DABE1029E8299600AA0CC7 /* AlarmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DABE0F29E8299600AA0CC7 /* AlarmManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07DABDEC29E8215400AA0CC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07DABDCA29E8215300AA0CC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07DABDD129E8215300AA0CC7;
+			remoteInfo = HugeClock;
+		};
+		07DABDF629E8215400AA0CC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07DABDCA29E8215300AA0CC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07DABDD129E8215300AA0CC7;
+			remoteInfo = HugeClock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07DABDD229E8215300AA0CC7 /* HugeClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HugeClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07DABDD529E8215300AA0CC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07DABDD729E8215300AA0CC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		07DABDD929E8215300AA0CC7 /* AlarmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmsViewController.swift; sourceTree = "<group>"; };
+		07DABDDC29E8215300AA0CC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07DABDDF29E8215300AA0CC7 /* HugeClock.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HugeClock.xcdatamodel; sourceTree = "<group>"; };
+		07DABDE129E8215400AA0CC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07DABDE429E8215400AA0CC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07DABDE629E8215400AA0CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07DABDEB29E8215400AA0CC7 /* HugeClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HugeClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07DABDEF29E8215400AA0CC7 /* HugeClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugeClockTests.swift; sourceTree = "<group>"; };
+		07DABDF529E8215400AA0CC7 /* HugeClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HugeClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07DABDF929E8215400AA0CC7 /* HugeClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugeClockUITests.swift; sourceTree = "<group>"; };
+		07DABDFB29E8215400AA0CC7 /* HugeClockUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugeClockUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		07DABE0829E8279A00AA0CC7 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		07DABE0B29E8282500AA0CC7 /* AddAlarmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmViewModel.swift; sourceTree = "<group>"; };
+		07DABE0F29E8299600AA0CC7 /* AlarmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07DABDCF29E8215300AA0CC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07DABDE829E8215400AA0CC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07DABDF229E8215400AA0CC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07DABDC929E8215300AA0CC7 = {
+			isa = PBXGroup;
+			children = (
+				07DABDD429E8215300AA0CC7 /* HugeClock */,
+				07DABDEE29E8215400AA0CC7 /* HugeClockTests */,
+				07DABDF829E8215400AA0CC7 /* HugeClockUITests */,
+				07DABDD329E8215300AA0CC7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07DABDD329E8215300AA0CC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07DABDD229E8215300AA0CC7 /* HugeClock.app */,
+				07DABDEB29E8215400AA0CC7 /* HugeClockTests.xctest */,
+				07DABDF529E8215400AA0CC7 /* HugeClockUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07DABDD429E8215300AA0CC7 /* HugeClock */ = {
+			isa = PBXGroup;
+			children = (
+				07DABE0E29E8298600AA0CC7 /* Managers */,
+				07DABE1229E830B000AA0CC7 /* Views */,
+				07DABE0A29E8279F00AA0CC7 /* Models */,
+				07DABE0D29E8282A00AA0CC7 /* ViewModels */,
+				07DABE1329E830D800AA0CC7 /* Storyboards */,
+				07DABE1129E8307100AA0CC7 /* SupportingFiles */,
+				07DABDE629E8215400AA0CC7 /* Info.plist */,
+			);
+			path = HugeClock;
+			sourceTree = "<group>";
+		};
+		07DABDEE29E8215400AA0CC7 /* HugeClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				07DABDEF29E8215400AA0CC7 /* HugeClockTests.swift */,
+			);
+			path = HugeClockTests;
+			sourceTree = "<group>";
+		};
+		07DABDF829E8215400AA0CC7 /* HugeClockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				07DABDF929E8215400AA0CC7 /* HugeClockUITests.swift */,
+				07DABDFB29E8215400AA0CC7 /* HugeClockUITestsLaunchTests.swift */,
+			);
+			path = HugeClockUITests;
+			sourceTree = "<group>";
+		};
+		07DABE0A29E8279F00AA0CC7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				07DABE0829E8279A00AA0CC7 /* Alarm.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		07DABE0D29E8282A00AA0CC7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				07DABE0B29E8282500AA0CC7 /* AddAlarmViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		07DABE0E29E8298600AA0CC7 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				07DABE0F29E8299600AA0CC7 /* AlarmManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		07DABE1129E8307100AA0CC7 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				07DABDD529E8215300AA0CC7 /* AppDelegate.swift */,
+				07DABDD729E8215300AA0CC7 /* SceneDelegate.swift */,
+				07DABDE129E8215400AA0CC7 /* Assets.xcassets */,
+				07DABDDE29E8215300AA0CC7 /* HugeClock.xcdatamodeld */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		07DABE1229E830B000AA0CC7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				07DABDD929E8215300AA0CC7 /* AlarmsViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		07DABE1329E830D800AA0CC7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				07DABDE329E8215400AA0CC7 /* LaunchScreen.storyboard */,
+				07DABDDB29E8215300AA0CC7 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07DABDD129E8215300AA0CC7 /* HugeClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07DABDFF29E8215400AA0CC7 /* Build configuration list for PBXNativeTarget "HugeClock" */;
+			buildPhases = (
+				07DABDCE29E8215300AA0CC7 /* Sources */,
+				07DABDCF29E8215300AA0CC7 /* Frameworks */,
+				07DABDD029E8215300AA0CC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HugeClock;
+			productName = HugeClock;
+			productReference = 07DABDD229E8215300AA0CC7 /* HugeClock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07DABDEA29E8215400AA0CC7 /* HugeClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07DABE0229E8215400AA0CC7 /* Build configuration list for PBXNativeTarget "HugeClockTests" */;
+			buildPhases = (
+				07DABDE729E8215400AA0CC7 /* Sources */,
+				07DABDE829E8215400AA0CC7 /* Frameworks */,
+				07DABDE929E8215400AA0CC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07DABDED29E8215400AA0CC7 /* PBXTargetDependency */,
+			);
+			name = HugeClockTests;
+			productName = HugeClockTests;
+			productReference = 07DABDEB29E8215400AA0CC7 /* HugeClockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		07DABDF429E8215400AA0CC7 /* HugeClockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07DABE0529E8215400AA0CC7 /* Build configuration list for PBXNativeTarget "HugeClockUITests" */;
+			buildPhases = (
+				07DABDF129E8215400AA0CC7 /* Sources */,
+				07DABDF229E8215400AA0CC7 /* Frameworks */,
+				07DABDF329E8215400AA0CC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07DABDF729E8215400AA0CC7 /* PBXTargetDependency */,
+			);
+			name = HugeClockUITests;
+			productName = HugeClockUITests;
+			productReference = 07DABDF529E8215400AA0CC7 /* HugeClockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07DABDCA29E8215300AA0CC7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					07DABDD129E8215300AA0CC7 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					07DABDEA29E8215400AA0CC7 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 07DABDD129E8215300AA0CC7;
+					};
+					07DABDF429E8215400AA0CC7 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 07DABDD129E8215300AA0CC7;
+					};
+				};
+			};
+			buildConfigurationList = 07DABDCD29E8215300AA0CC7 /* Build configuration list for PBXProject "HugeClock" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07DABDC929E8215300AA0CC7;
+			productRefGroup = 07DABDD329E8215300AA0CC7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07DABDD129E8215300AA0CC7 /* HugeClock */,
+				07DABDEA29E8215400AA0CC7 /* HugeClockTests */,
+				07DABDF429E8215400AA0CC7 /* HugeClockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07DABDD029E8215300AA0CC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07DABDE529E8215400AA0CC7 /* LaunchScreen.storyboard in Resources */,
+				07DABDE229E8215400AA0CC7 /* Assets.xcassets in Resources */,
+				07DABDDD29E8215300AA0CC7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07DABDE929E8215400AA0CC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07DABDF329E8215400AA0CC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07DABDCE29E8215300AA0CC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07DABE1029E8299600AA0CC7 /* AlarmManager.swift in Sources */,
+				07DABDDA29E8215300AA0CC7 /* AlarmsViewController.swift in Sources */,
+				07DABDD629E8215300AA0CC7 /* AppDelegate.swift in Sources */,
+				07DABE0929E8279A00AA0CC7 /* Alarm.swift in Sources */,
+				07DABDD829E8215300AA0CC7 /* SceneDelegate.swift in Sources */,
+				07DABE0C29E8282500AA0CC7 /* AddAlarmViewModel.swift in Sources */,
+				07DABDE029E8215300AA0CC7 /* HugeClock.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07DABDE729E8215400AA0CC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07DABDF029E8215400AA0CC7 /* HugeClockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07DABDF129E8215400AA0CC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07DABDFC29E8215400AA0CC7 /* HugeClockUITestsLaunchTests.swift in Sources */,
+				07DABDFA29E8215400AA0CC7 /* HugeClockUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07DABDED29E8215400AA0CC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07DABDD129E8215300AA0CC7 /* HugeClock */;
+			targetProxy = 07DABDEC29E8215400AA0CC7 /* PBXContainerItemProxy */;
+		};
+		07DABDF729E8215400AA0CC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07DABDD129E8215300AA0CC7 /* HugeClock */;
+			targetProxy = 07DABDF629E8215400AA0CC7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07DABDDB29E8215300AA0CC7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07DABDDC29E8215300AA0CC7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		07DABDE329E8215400AA0CC7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07DABDE429E8215400AA0CC7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07DABDFD29E8215400AA0CC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		07DABDFE29E8215400AA0CC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07DABE0029E8215400AA0CC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZF9F653ZVJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HugeClock/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HugeClock;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HugeCorp.HugeClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		07DABE0129E8215400AA0CC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZF9F653ZVJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HugeClock/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HugeClock;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HugeCorp.HugeClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		07DABE0329E8215400AA0CC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZF9F653ZVJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HugeCorp.HugeClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HugeClock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HugeClock";
+			};
+			name = Debug;
+		};
+		07DABE0429E8215400AA0CC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZF9F653ZVJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HugeCorp.HugeClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HugeClock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HugeClock";
+			};
+			name = Release;
+		};
+		07DABE0629E8215400AA0CC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZF9F653ZVJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HugeCorp.HugeClockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HugeClock;
+			};
+			name = Debug;
+		};
+		07DABE0729E8215400AA0CC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZF9F653ZVJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HugeCorp.HugeClockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HugeClock;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07DABDCD29E8215300AA0CC7 /* Build configuration list for PBXProject "HugeClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07DABDFD29E8215400AA0CC7 /* Debug */,
+				07DABDFE29E8215400AA0CC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07DABDFF29E8215400AA0CC7 /* Build configuration list for PBXNativeTarget "HugeClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07DABE0029E8215400AA0CC7 /* Debug */,
+				07DABE0129E8215400AA0CC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07DABE0229E8215400AA0CC7 /* Build configuration list for PBXNativeTarget "HugeClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07DABE0329E8215400AA0CC7 /* Debug */,
+				07DABE0429E8215400AA0CC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07DABE0529E8215400AA0CC7 /* Build configuration list for PBXNativeTarget "HugeClockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07DABE0629E8215400AA0CC7 /* Debug */,
+				07DABE0729E8215400AA0CC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		07DABDDE29E8215300AA0CC7 /* HugeClock.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				07DABDDF29E8215300AA0CC7 /* HugeClock.xcdatamodel */,
+			);
+			currentVersion = 07DABDDF29E8215300AA0CC7 /* HugeClock.xcdatamodel */;
+			path = HugeClock.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 07DABDCA29E8215300AA0CC7 /* Project object */;
+}
