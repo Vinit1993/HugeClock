@@ -11,6 +11,6 @@ struct Alarm: Codable {
     let id: String
     let name: String
     let time: Date
-    let enabled: Bool
-    let deleted: Bool
+    var enabled: Bool
+    var deleted: Bool
 }

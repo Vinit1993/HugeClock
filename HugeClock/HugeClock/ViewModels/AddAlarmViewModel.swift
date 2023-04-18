@@ -8,28 +8,40 @@
 import Foundation
 
 class AlarmViewModel {
-    private let alarmManager: AlarmManagerProtocol
-    private var alarms: [Alarm] = []
     
-    let title = "Title"
-    var numberOfAlarms: Int {
-        return alarms.count
+    private let alarmManager: AlarmManagerProtocol
+    private let notificationManager: NotificationManagerProtocol
+    private var alarmsArray: [Alarm] = []
+    
+    func alarms() -> [Alarm] {
+        alarmsArray = alarmManager.getAlarms()
+        return alarmsArray
     }
     
-    init(alarmManager: AlarmManagerProtocol) {
+    init(alarmManager: AlarmManagerProtocol = AlarmManager(),
+         notificationManager: NotificationManagerProtocol = NotificationManager()) {
         self.alarmManager = alarmManager
-        self.alarms = alarmManager.getAlarms()
+        self.notificationManager = notificationManager
     }
     
     func addAlarm(alarm: Alarm) {
         alarmManager.addAlarm(alarm)
+        notificationManager.addNotification(alarm)
     }
     
-    func toggleAlarm(alarm: Alarm) {
-        alarmManager.toggleAlarm(alarm)
+    func toggleAlarm(index: Int) {
+        let alarm = alarmsArray[index]
+        alarmManager.toggleAlarm(alarmsArray[index])
+        if alarm.enabled {
+            notificationManager.addNotification(alarm)
+        } else {
+            notificationManager.deleteNotification(alarm)
+        }
     }
     
-    func deleteAlarm(alarm: Alarm) {
+    func deleteAlarm(index: Int) {
+        let alarm = alarmsArray[index]
         alarmManager.deleteAlarm(alarm)
+        notificationManager.deleteNotification(alarm)
     }
 }

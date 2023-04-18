@@ -14,21 +14,49 @@ protocol AlarmManagerProtocol {
     func getAlarms() -> [Alarm]
 }
 
-struct AlarmManager: AlarmManagerProtocol {
+class AlarmManager: AlarmManagerProtocol {
+    
+    private let alarmsKey = "alarms"
+    
+    private var alarms: [Alarm] {
+        get {
+            if let alarmsData = UserDefaults.standard.data(forKey: alarmsKey),
+               let alarms = try? JSONDecoder().decode([Alarm].self, from: alarmsData) {
+                return alarms
+            } else {
+                return []
+            }
+        }
+        set {
+            let alarmsData = try? JSONEncoder().encode(newValue)
+            UserDefaults.standard.set(alarmsData, forKey: alarmsKey)
+        }
+    }
+
     func addAlarm(_ alarm: Alarm) {
-        
+        alarms.append(alarm)
     }
     
     func toggleAlarm(_ alarm: Alarm) {
-        
+        if let index = alarms.firstIndex(where: { alarmObject in
+            alarmObject.id == alarm.id
+        }) {
+            alarms[index].enabled.toggle()
+        }
     }
     
     func deleteAlarm(_ alarm: Alarm) {
-        
+        if let index = alarms.firstIndex(where: { alarmObject in
+            alarmObject.id == alarm.id
+        }) {
+            alarms[index].deleted.toggle()
+        }
     }
     
     func getAlarms() -> [Alarm] {
-
-        return []
+        alarms.filter { $0.deleted == false }
+            .sorted { alarm, nextAlarm in
+                alarm.time < nextAlarm.time
+            }
     }
 }
